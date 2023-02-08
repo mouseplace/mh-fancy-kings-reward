@@ -230,5 +230,5 @@
 		if (req.success && req.puzzle_reward) {
 			window.location.reload();
 		}
-	}, 'managers/ajax/users/solvePuzzle.php', true );
+	}, 'managers/ajax/users/solvePuzzle.php', true);
 })());
