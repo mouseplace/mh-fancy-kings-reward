@@ -4,6 +4,6 @@ A Userscript for [MouseHunt](https://mousehuntgame.com) that makes the King's Re
 
 ## Installation
 
-Install via [GreasyFork](https://greasyfork.org/en/scripts/).
+Install via [GreasyFork](https://greasyfork.org/en/scripts/459629-mousehunt-fancy-king-s-reward).
 
 *You must have [ViolentMonkey](https://violentmonkey.github.io/) or another userscript manager installed.*
