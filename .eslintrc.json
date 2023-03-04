@@ -43,6 +43,7 @@
         "no-alert": "error",
         "no-console": "error",
         "no-eval": "error",
+        "no-undef": 0,
         "no-implied-eval":"error",
         "no-template-curly-in-string": "error",
         "no-useless-concat":"error",
