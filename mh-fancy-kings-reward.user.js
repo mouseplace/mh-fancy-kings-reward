@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         🐭️ Mousehunt - Fancy King's Reward
-// @version      1.1.0
+// @version      1.1.1
 // @description  Makes the King's Reward look nicer and automatically goes back to the page you were on after solving the puzzle.
 // @license      MIT
 // @author       bradp
@@ -9,7 +9,7 @@
 // @icon         https://brrad.com/mouse.png
 // @grant        none
 // @run-at       document-end
-// @require      https://cdn.jsdelivr.net/gh/mouseplace/mousehunt-utils/mousehunt-utils.js
+// @require      https://cdn.jsdelivr.net/npm/mousehunt-utils@1.2.0/mousehunt-utils.js
 // ==/UserScript==
 
 ((function () {
