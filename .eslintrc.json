@@ -34,7 +34,7 @@
             "after": true
         }],
         "eol-last": ["error", "always"],
-        "indent": ["error", "tab"],
+        "indent": ["error", 2],
         "jsdoc/tag-lines": ["error", "always", {
             "count": 0
         }],

@@ -13,9 +13,9 @@
 // ==/UserScript==
 
 ((function () {
-	'use strict';
+  'use strict';
 
-	addStyles(`.mousehuntPage-puzzle-form-description, .mousehuntPage-puzzle-form-title, .mousehuntPage-puzzle-form-subtitle {
+  addStyles(`.mousehuntPage-puzzle-form-description, .mousehuntPage-puzzle-form-title, .mousehuntPage-puzzle-form-subtitle {
 		display: none;
 	}
 
@@ -172,10 +172,10 @@
 		box-shadow: none;
 	}`);
 
-	onAjaxRequest((req) => {
-		// If we solved it, refresh the page.
-		if (req.success && req.puzzle_reward) {
-			window.location.reload();
-		}
-	}, 'managers/ajax/users/solvePuzzle.php', true);
+  onAjaxRequest((req) => {
+    // If we solved it, refresh the page.
+    if (req.success && req.puzzle_reward) {
+      window.location.reload();
+    }
+  }, 'managers/ajax/users/solvePuzzle.php', true);
 })());
