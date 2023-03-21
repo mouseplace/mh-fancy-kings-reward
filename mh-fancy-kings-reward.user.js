@@ -1,12 +1,12 @@
 // ==UserScript==
 // @name         🐭️ Mousehunt - Fancy King's Reward
-// @version      1.1.1
+// @version      1.2.0
 // @description  Makes the King's Reward look nicer and automatically goes back to the page you were on after solving the puzzle.
 // @license      MIT
 // @author       bradp
 // @namespace    bradp
 // @match        https://www.mousehuntgame.com/*
-// @icon         https://brrad.com/mouse.png
+// @icon         https://i.mouse.rip/mouse.png
 // @grant        none
 // @run-at       document-end
 // @require      https://cdn.jsdelivr.net/npm/mousehunt-utils@1.2.0/mousehunt-utils.js
@@ -172,7 +172,28 @@
 		box-shadow: none;
 	}`);
 
+  const init = () => {
+    if ('puzzle' !== getCurrentPage()) {
+      return;
+    }
+
+    const kingsRewardInput = document.querySelector('.mousehuntPage-puzzle-form-code');
+    if (! kingsRewardInput) {
+      return;
+    }
+
+    kingsRewardInput.spellcheck = false;
+
+    kingsRewardInput.focus();
+  };
+
+  init();
+
+  onPageChange({ change: init });
+
   onAjaxRequest((req) => {
+    init();
+
     // If we solved it, refresh the page.
     if (req.success && req.puzzle_reward) {
       window.location.reload();
