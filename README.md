@@ -1,10 +1,6 @@
 # 🐭️ Mousehunt - Fancy King's Reward
 
-![Greasy Fork](https://img.shields.io/greasyfork/dt/459629)
-![GitHub](https://img.shields.io/github/license/mouseplace/mh-fancy-kings-reward)
-![GitHub tag (latest SemVer)](https://img.shields.io/github/v/tag/mouseplace/mh-fancy-kings-reward?label=version)
-
-A Userscript for [MouseHunt](https://mousehuntgame.com) that makes the King's Reward look nicer and automatically goes back to the page you were on after solving the puzzle.
+A Userscript for [MouseHunt](https://mousehuntgame.com) to automatically clicks the "Resume Hunting" button after solving a King's Reward.
 
 ## Installation
 
